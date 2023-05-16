@@ -1,0 +1,116 @@
+#header{
+    align-items: center;
+    justify-content: space-around;
+}
+
+#brand{
+    margin-right: 20px;
+    filter: drop-shadow(10px 10px 2px rgba(0, 0, 0, 0.205))
+}
+
+#navigation{
+    display: flex;
+}
+
+#navigation li{
+    display: inline-block;
+}
+
+#navigation li > a{
+    text-decoration: none;
+    color: var(--color-secundary);
+    line-height: 40px;
+    font-weight: 700;
+    margin: 0px 10px 0px 10px;
+}
+
+#navigation >ul > li > a:hover{
+    color: var(--color-secundary-dark);
+    font-size: 1.2em;
+    transition-duration: 0.2s;
+}
+
+#navigation > section{
+    display: flex;
+    
+}
+
+#container-button{
+    display: flex;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12vw;
+    height: 5vh;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: 700;
+    margin: 0px 15px 0px 15px;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4))
+}
+
+button > img{
+    margin-left: 10px;
+    height: 2.5vh;
+}
+
+#button-bag{
+    background-color: var(--color-primary);
+}
+
+#button-bag:hover{
+    color: var(--color-primary);
+    background-color: white;
+    transition-duration: 0.2s;
+}
+
+#button-bag:hover > img{
+    filter: drop-shadow(0px 0px 2px var(--color-primary))
+}
+
+#button-login{
+    background-color: var(--color-contrast);
+}
+
+#button-login:hover{
+    color: var(--color-contrast);
+    background-color: white;
+    transition-duration: 0.2s;
+}
+
+#button-login:hover > img{
+    filter: drop-shadow(0px 0px 2px var(--color-contrast))
+}
+
+#main{
+    align-items: center;
+    justify-content: center;
+	background-color: chartreuse;
+}
+
+#submit{
+    color: white;
+    background-color: white;
+    width: 400px;
+    height: 30px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+#submit > #input-text{
+    color: black;
+    border: none;
+}
+
+#picture img{
+    background-color: tomato;
+}
+
+#footer{
+	background-color: red;
+}
+
