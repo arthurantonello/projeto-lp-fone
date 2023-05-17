@@ -12,7 +12,7 @@
 
 #container{
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 2fr 1fr;
 	grid-template-rows: 15vh 80vh 5vh;;
 	grid-template-areas: "header header"
 						"main picture"
@@ -41,4 +41,15 @@
 
 .button{
 	cursor: pointer;
+}
+
+#input-text{
+	padding: 2%;
+    outline: none!important;
+    border: none;
+}
+
+.modal{
+	width: max(30vw, 400px);
+	height: 50vh;
 }

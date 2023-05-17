@@ -33,13 +33,26 @@
         </header>
         <main id="main">
             <section id="content">
-                <h1>Super Fone Extrema Qualidade de Som Top</h1>
+                <h1>Super Fone<br>Extrema Qualidade<br>de Som Top</h1>
                 <h2>Você irá se surpreender com a qualidade de som desse
                     fone sem fio. Viaje em altos graves e agudos em suas
                     músicas ou vídeos.</h2>
-                <section id="submit">
+                <section id="message">
                     <img src="assets/img/envelope.png" alt="Ícone de envelope">
-                    <input type="text" name="Escreva sua mensagem" id="input-text">
+                    <input id="input-text" type="text" placeholder="Escreva sua mensagem">
+                    <input id="button-send" type="submit" class="button" value="ENVIAR" onclick="confirmacao()">
+                    <dialog id="modalOk" class="modal">
+                        <p>Conteúdo do modal</p>
+                        <form method="dialog">
+                            <button class="button-close">X</button>
+                        </form>
+                    </dialog>
+                    <dialog id="modalErro" class="modal">
+                        <p>DEU ERRO</p>
+                        <form method="dialog">
+                            <button class="button-close">X</button>
+                        </form>
+                    </dialog>
                 </section>
             </section>
         </main>
