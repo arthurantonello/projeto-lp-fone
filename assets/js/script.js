@@ -1,8 +1,9 @@
+var input = document.getElementById('input-text')
+var button = document.getElementsByClassName('.button-send')
 function confirmacao(){
-    var input = document.getElementById('input-text')
     if (input.value == ""){
-        window.modalErro.showModal()
+        alert('##Fazer mensagem de insira mensagem')
     }else{
-        window.modalOk.showModal()
+        window.modaldialog.showModal()
     }
 }

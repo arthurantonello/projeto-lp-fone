@@ -48,8 +48,35 @@
     outline: none!important;
     border: none;
 }
-
-.modal{
-	width: max(30vw, 400px);
+#modaldialog{
+	width: max(40vw, 400px);
 	height: 50vh;
+	padding: 0;
+}
+
+dialog::backdrop{
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+#modal-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 50vh;
+	grid-template-areas: "container mensagem";
+}
+
+#modal-container-esquerda{
+	grid-area: container;
+	display: flex;
+}
+
+#modal-container img,p{
+	grid-area: container;
+	display: flex;
+}
+
+#modal-agradecimento{
+	grid-area: mensagem;
+	display: flex;
+	font-weight: 700;
 }

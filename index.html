@@ -41,17 +41,17 @@
                     <img src="assets/img/envelope.png" alt="Ícone de envelope">
                     <input id="input-text" type="text" placeholder="Escreva sua mensagem">
                     <input id="button-send" type="submit" class="button" value="ENVIAR" onclick="confirmacao()">
-                    <dialog id="modalOk" class="modal">
-                        <p>Conteúdo do modal</p>
-                        <form method="dialog">
-                            <button class="button-close">X</button>
-                        </form>
-                    </dialog>
-                    <dialog id="modalErro" class="modal">
-                        <p>DEU ERRO</p>
-                        <form method="dialog">
-                            <button class="button-close">X</button>
-                        </form>
+                    <dialog id="modaldialog"> 
+                        <section id="modal-container">
+                            <section id="modal-container-esquerda">
+                                <div id="modal-background"></div>
+                                <img src="assets/img/envelope.png" alt="Envelope">
+                                <p>Mensagem Enviada</p>
+                            </section>
+                            <section id="modal-agradecimento">
+                                <p>Obrigado por enviar a mensagem! Responderemos em breve!</p>
+                            </section>
+                        </section>     
                     </dialog>
                 </section>
             </section>
