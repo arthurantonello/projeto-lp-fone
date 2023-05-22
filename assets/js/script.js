@@ -1,9 +1,8 @@
 var input = document.getElementById('input-text')
-var button = document.getElementsByClassName('.button-send')
 function confirmacao(){
     if (input.value == ""){
-        alert('##Fazer mensagem de insira mensagem')
+        alert('Digite alguma mensagem antes de enviar')
     }else{
-        window.modaldialog.showModal()
+        window.modal.showModal()
     }
 }

@@ -7,6 +7,7 @@ body{
 }
 
 #header{
+    display:flex;
     align-items: center;
     justify-content: space-around;
 }
@@ -14,14 +15,6 @@ body{
 #brand{
     margin-right: 20px;
     filter: drop-shadow(10px 10px 2px rgba(0, 0, 0, 0.205))
-}
-
-#navigation{
-    display: flex;
-}
-
-#navigation li{
-    display: inline-block;
 }
 
 #navigation li > a{
@@ -38,18 +31,8 @@ body{
     transition-duration: 0.2s;
 }
 
-#navigation > section{
-    display: flex;
-    
-}
-
-#container-button{
-    display: flex;
-}
-
 .button{
     color: white;
-    display: flex;
     align-items: center;
     justify-content: center;
     width: fit-content;
@@ -62,7 +45,7 @@ body{
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4))
 }
 
-button > img{
+.button > img{
     margin-left: 10px;
     height: 2.5vh;
 }
@@ -100,7 +83,6 @@ button > img{
 }
 
 #content{
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -109,7 +91,7 @@ button > img{
 #content h1{
     color: var(--color-primary);
     text-align: center;
-    font:700 4em var(--font-padrao);
+    font:700 4em var(--font-primary);
 }
 
 #content h2{
@@ -150,13 +132,13 @@ button > img{
     transition-duration: 0.4s;
 }
 
-#modaldialog{
+#modal{
     outline: none;
     border: none;
     box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
 }
 
-#modal-container-esquerda{
+#modal-container-left{
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -167,18 +149,18 @@ button > img{
     background-color: var(--color-primary);
 }
 
-#modal-container-esquerda img{
+#modal-container-left img{
     filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.4));
     width: 2vw;
 }
 
-#modal-container-esquerda p{
+#modal-container-left p{
     color: white;
     font-size: 1.2em;
     filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.4));
 }
 
-#modal-agradecimento{
+#modal-right{
     text-align: center;
     align-items: center;
 }

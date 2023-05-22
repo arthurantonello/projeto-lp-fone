@@ -21,14 +21,8 @@
                 </ul>
             </nav>
             <section id="container-button">
-                <button id="button-bag" class="button" type="submit" alt="Sacola">
-                    <p>Sacola</p>
-                    <img src="assets/img/shopping-cart.png" alt="Sacola">
-                </button>
-                <button id="button-login" class="button" type="submit" alt="Login">
-                    <p>Login</p>
-                    <img src="assets/img/user.png" alt="Login">
-                </button>
+                <button id="button-bag" class="button" alt="Sacola">Sacola<img src="assets/img/shopping-cart.png" alt="Logo sacola"></button>
+                <button id="button-login" class="button" alt="Sacola">Login<img src="assets/img/user.png" alt="Logo sacola"></button>
             </section>
         </header>
         <main id="main">
@@ -41,16 +35,13 @@
                     <img src="assets/img/envelope.png" alt="Ícone de envelope">
                     <input id="input-text" type="text" placeholder="Escreva sua mensagem">
                     <input id="button-send" type="submit" class="button" value="ENVIAR" onclick="confirmacao()">
-                    <dialog id="modaldialog"> 
+                    <dialog id="modal"> 
                         <section id="modal-container">
-                            <section id="modal-container-esquerda">
-                                <div id="modal-background"></div>
+                            <section id="modal-container-left">
                                 <img src="assets/img/envelope.png" alt="Envelope">
                                 <p>Mensagem Enviada</p>
                             </section>
-                            <section id="modal-agradecimento">
-                                <p>Obrigado por enviar a mensagem! Responderemos em breve!</p>
-                            </section>
+                            <section id="modal-right">Obrigado por enviar a mensagem! Responderemos em breve!</section>
                         </section>     
                     </dialog>
                 </section>

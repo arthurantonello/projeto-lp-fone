@@ -6,8 +6,8 @@
     --color-secundary:#6567D6;
     --color-secundary-dark:#662F97;
     --color-contrast:#F28322;
-    --font-padrao:'Roboto', sans-serif;
-    font: 1em var(--font-padrao);
+    --font-primary:'Roboto', sans-serif;
+    font: 1em var(--font-primary);
 }
 
 #container{
@@ -24,8 +24,32 @@
 	display: flex;
 }
 
+#navigation{
+    display: flex;
+}
+
+#navigation li{
+    display: inline-block;
+}
+
+#navigation > section{
+    display: flex;
+}
+
+#container-button{
+    display: flex;
+}
+
+.button{
+	display: flex;
+}
+
 #main{
 	grid-area: main;
+	display: flex;
+}
+
+#content{
 	display: flex;
 }
 
@@ -48,14 +72,14 @@
     outline: none!important;
     border: none;
 }
-#modaldialog{
+#modal{
 	width: max(40vw, 400px);
 	height: 50vh;
 	padding: 0;
 }
 
 dialog::backdrop{
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, .5);
 }
 
 #modal-container{
@@ -65,17 +89,17 @@ dialog::backdrop{
 	grid-template-areas: "container mensagem";
 }
 
-#modal-container-esquerda{
+#modal-container img{
 	grid-area: container;
 	display: flex;
 }
 
-#modal-container img,p{
+#modal-container-left{
 	grid-area: container;
 	display: flex;
 }
 
-#modal-agradecimento{
+#modal-right{
 	grid-area: mensagem;
 	display: flex;
 	font-weight: 700;
