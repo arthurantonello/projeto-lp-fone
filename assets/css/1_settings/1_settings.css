@@ -68,6 +68,7 @@
 }
 
 #input-text{
+	font:400 1em var(--font-primary);
 	padding: 2%;
     outline: none!important;
     border: none;
