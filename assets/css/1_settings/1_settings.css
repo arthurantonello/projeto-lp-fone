@@ -32,7 +32,7 @@
     display: inline-block;
 }
 
-#navigation > section{
+#navigation > #container-button{
     display: flex;
 }
 

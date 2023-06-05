@@ -1,0 +1,83 @@
+@media (max-width: 450px){
+
+    #container {
+        grid-template-columns: 1fr 1fr !important;
+        grid-template-rows: 15vh 80vh 5vh;;
+        grid-template-areas: "header"
+                            "main"
+                            "picture";
+    }
+
+    
+    .button{
+        font-size: .7em !important;
+        width: 25vw !important;
+    }
+
+    #navigation{
+        display: none !important;
+    }
+
+    #container-menu-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 111vw;
+        background-color: black;
+    }
+
+    #container-menu-mobile #img-menu{
+        width: 10vw;
+    }
+
+    #container-menu-mobile #menu-mobile{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #container-button{
+        padding: 0px 0 0px 80%;
+        flex-direction: column;
+    }
+
+    #button-login{
+        margin-top: 1vh !important;
+    }
+
+
+    #content{
+        width: 100vw;
+    }
+
+    #content > span{
+        margin: 0 0 45vh 25vw !important;
+        font-size: 15em !important;
+        letter-spacing: 40px !important;
+    }
+
+    #content h1{
+        margin-left: 10vw;
+        font-size: 4em !important;
+    }
+
+    #content h2{
+        display: none;
+    }
+
+    #message{
+        width: 330px !important;
+        margin: 5vh 0 20vh 10vw;
+    }
+
+    #button-send{
+        margin: 0 20vw 0 0;
+    }
+
+    #modal{
+        /* AJUSTAR */
+    }
+
+    #picture{
+        display: none;
+    }
+}

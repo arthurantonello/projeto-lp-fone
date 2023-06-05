@@ -25,7 +25,11 @@ body{
     margin: 0px 10px 0px 10px;
 }
 
-#navigation >ul > li > a:hover{
+#container-menu-mobile{
+    
+}
+
+#navigation > #menu-pc > li > a:hover{
     color: var(--color-secundary-dark);
     transform: scale();
     font-size: 1.2em;
